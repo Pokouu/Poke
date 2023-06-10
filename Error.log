@@ -1,17 +1,24 @@
 ================================Erreur de script================================
 Message :
-(eval):1: syntax error, unexpected end-of-input
+undefined method `getValue' for nil:NilClass
 
-Type : SyntaxError
-Script : 00600 Script_RMXP/02600 Interpreter_3.rb (PSDK)
-Ligne : 206
-Date : 09/06/2023 16:35:55
+Type : NoMethodError
+Script : (eval) (RMXP)
+Ligne : 2
+Date : 10/06/2023 10:02:50
 Game Version : 256
 Logiciel : Pokémon SDK 26.12
+Script used by eval command : 
+start_trainer_battle(
+$gameVariables.getValue(476))
+$game_temp_battle_can_lose = false
+
+
 ===================================Backtraces===================================
-[24] : 00600 Script_RMXP/02600 Interpreter_3.rb (PSDK) | ligne 206 eval
-[23] : 00600 Script_RMXP/02600 Interpreter_3.rb (PSDK) | ligne 206 eval_condition_script
-[22] : 00600 Script_RMXP/02600 Interpreter_3.rb (PSDK) | ligne 187 command_111
+[25] : (eval) (RMXP) | ligne 2 eval_script
+[24] : 00600 Script_RMXP/03000 Interpreter_7.rb (PSDK) | ligne 124 eval
+[23] : 00600 Script_RMXP/03000 Interpreter_7.rb (PSDK) | ligne 124 eval_script
+[22] : 00600 Script_RMXP/03000 Interpreter_7.rb (PSDK) | ligne 114 command_355
 [21] : 00600 Script_RMXP/02500 Interpreter_2.rb (PSDK) | ligne 16 execute_command
 [20] : 00600 Script_RMXP/02400 Interpreter_1.rb (PSDK) | ligne 132 update
 [19] : 00600 Script_RMXP/02400 Interpreter_1.rb (PSDK) | ligne 100 loop
